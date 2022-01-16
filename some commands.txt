@@ -1,0 +1,46 @@
+1. git config --global init.defaultBranch main
+2. git init
+
+
+git 3 parts
+1. work space (shows files)
+2. tracking space (git add 'Document name'.ext - moves file to tracking space, use '' for white spaces)
+3. saved space/git log (git commit --m "did whatever" - saves a "screenshot" of what we did("-m" means message))
+4. github - online git where you can keep your code and build portfolios (git push)
+
+
+to add user: 
+git config --global user.email "email@email.com"
+git config --global user.name "name"
+#global makes it permanent
+#Omit --global to set the identity only in this repository
+
+without global
+
+git config user.name "name"
+
+#
+git log - shows logs
+git status - blablabla
+
+
+when we create git init we need to make it main instead of master
+git config --global init.defaultBranch main
+
+
+
+
+
+to delete git logs and stuff, just delete the git folder
+instead of "man git" use "git --help"
+
+what's "git branch/git branch --list"?
+
+git checkout a4c25d (commit id) - moves us to the commit state
+git checkout HEAD - bring us back to present
+
+git switch -c new_branch_name
+git switch branch_name
+ssh-keygen -t ed25519 -C "your_email@example.com"
+ ssh-add ~/.ssh/id_ed25519
+clip < ~/.ssh/id_ed25519.pub
